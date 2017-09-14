@@ -40,6 +40,7 @@ export default class Player extends Component {
       this.state.audioPlayer.ontimeupdate = () => { this.timeUpdated() };
       this.state.audioPlayer.onprogress = () => { this.progressUpdated() };
     })
+    this.togglePlay();
   }
 
   togglePlay () {
